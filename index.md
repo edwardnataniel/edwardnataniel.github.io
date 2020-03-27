@@ -3,7 +3,7 @@ layout: page
 excerpt: "About Me..."
 ---
 
-I am a academic, hear me roar. I am an Assistant Professor at Oregon Health & Science University.
+I am a graduate student of the UP School Statistics.
 
 ## Current Interests and Projects:
 
