@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title: Personal Website of Edward Nataniel C. Apostol
+title: Edward Nataniel Apostol
 locale: en_US
 logo: # filename of a logo image that has been placed into your images directory
 
@@ -8,7 +8,7 @@ logo: # filename of a logo image that has been placed into your images directory
 owner:
   name: Edward Nataniel C. Apostol
   avatar: bio-photo.jpg
-  bio: "This is a sample Jekyll academic website."
+  bio: "MS Statistics student. BS Computer Science graduate"
   email: edward.nataniel@gmail.com
   # Do not include the @ symbol in your Twitter username
   twitter: edwardnatanielc
