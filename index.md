@@ -5,10 +5,6 @@ excerpt: "About Me..."
 
 Hello.
 
-I'm Edward. I'm currently a graduate student at University of the Philippines Diliman taking up MS Statistics. I have a bachelors degree in Computer Science from the same university. 
+I'm Edward. I'm currently a graduate student at University of the Philippines Diliman taking up MS Statistics. I have a bachelors degree in Computer Science from the same university. I have 3 years of professional experience in software engineering prior to graduate school.
 
-## Current Interests and Projects:
-
-- Website Design
-- [GitHub Pages](http://laderast.github.io)
-- Academia
+MY current interests are Data Mining and Analytics, Statistical Machine Learning, Multivariate Analysis, Categorical Data Analysis, and Computational Statistics. I do photography during my spare time. Check out my [instagram](https://www.instagram.com/edward.nataniel/) account.
