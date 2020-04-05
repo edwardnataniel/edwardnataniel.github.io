@@ -11,7 +11,7 @@ owner:
   bio: "MS Statistics student. BS Computer Science graduate"
   email: edward.nataniel@gmail.com
   # Do not include the @ symbol in your Twitter username
-  twitter: edwardnatanielc
+  twitter: #username
   linkedin: edward-apostol
   github: edwardnataniel
   orcid: # ID Number (ex. 0000-0000-0000-0000)
@@ -23,7 +23,7 @@ owner:
     verify:
     scholar: #id
   facebook: #username
-  instagram: #username
+  instagram: edward.nataniel
   bing-verify:
   stackoverflow: #123456/username from a "https://stackoverflow.com/users/123456/username" link
   xing: #username
