@@ -2,14 +2,11 @@
 - title: Home
   url: /
 
-- title: Projects
-  url: /projects/
-
 - title: CV
   url: /cv/
 
-- title: Blog
-  url: /blog/
+- title: Projects
+  url: /Projects/
 
 - title: Workshops
   url: /workshops/
