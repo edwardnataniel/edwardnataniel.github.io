@@ -2,6 +2,10 @@
 layout: page
 ---
 
-#### View my full CV [here](https://drive.google.com/open?id=19OilOdTZiYWeKWVh4-DM7NBCfXNX0k6-):  
+#### View my full CV [here](
+https://edwardnataniel.github.io/Apostol_Edward_Nataniel_CV.pdf):  
 
-<a href="https://drive.google.com/open?id=19OilOdTZiYWeKWVh4-DM7NBCfXNX0k6-">https://drive.google.com/open?id=19OilOdTZiYWeKWVh4-DM7NBCfXNX0k6-</a>
+<a href="
+https://edwardnataniel.github.io/Apostol_Edward_Nataniel_CV.pdf">
+https://edwardnataniel.github.io/Apostol_Edward_Nataniel_CV.pdf</a>
+
