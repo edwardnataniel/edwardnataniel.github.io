@@ -1,8 +1,7 @@
 ---
-layout: post
-title: Scenario Analysis for Flooding Vulnerability Using Genetic Algorithm
-excerpt: "(Undergraduate Thesis) Genetic algorithm was used to minimize the flooding vulnerability of the city of Urdaneta in Pangasinan. MATLAB was used run the algorithm."
-modified: 4/06/2020, 14:35:00
+title: Example content
+excerpt: "What is a static website generator, and why should I care?"
+modified: 2/29/2016, 9:00:24
 tags: [intro, beginner, jekyll, tutorial]
 comments: true
 category: blog
