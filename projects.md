@@ -1,4 +1,4 @@
 ---
-layout: post-index
+layout: page
 title: Selected Projects
 ---
