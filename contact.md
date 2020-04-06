@@ -1,6 +1,6 @@
 ---
 layout: page
-title: contact
+title: Contact Me
 excerpt: "Recent Workshops"
 ---
 
