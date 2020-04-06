@@ -1,142 +1,89 @@
 ---
 layout: post
-title: Example content
-excerpt: "What is a static website generator, and why should I care?"
-modified: 2/29/2016, 9:00:24
-tags: [intro, beginner, jekyll, tutorial]
+title: Scenario Analysis for Flooding Vulnerability Using Genetic Algorithm
+excerpt: ""
 comments: true
 category: blog
 ---
+## Scenario Analysis for Flooding Vulnerability Using Genetic Algorithm
 
-<div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-</div>
+Vena Pearl Boñgolan<sup>a</sup>, Oreste Terranova<sup>b</sup>, Edward Nataniel Apostol<sup>a</sup>, Joshua Kevin Cruz<sup>a</sup>
 
-Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+a)	The Scientific Computing Laboratory
+Department of Computer Science, College of Engineering, 
+University of the Philippines Diliman  
+b)	CNR-IRPI Cosenza, Italy  
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+### Abstract
+We minimize flooding vulnerability for a city in the central plain of Luzon, by ‘rearranging’ the barangays (communities in the city) via a **genetic algorithm**. The different components of flooding vulnerability were investigated, and each was given a weight, which allows us to express vulnerability as a weighted sum. This serves as the fitness function for the genetic algorithm. We also allowed non-linear interactions among related but independent components, viz, poverty and mortality rate, and literacy and radio/ TV penetration. The designs produced reflect the relative importance of the components, and synchronicity between the interacting components is observed. 
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+### Background
+All disaster management plans begin with the identification of risk (UN/ISDR, 2004), see [Lo, 2010]. **Risk** is an indicator of how prone a specific area is for a natural hazard to turn into a disaster; it is a function of three factors defined by this equation: 
 
-## Inline HTML elements
+**Risk = Hazard x Vulnerability x Exposure**
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+When natural hazards are concerned, little can be done on the hazard probability of a certain area for a specific disaster. We find exposure has the same problem. This is why **most disaster management plans focus on modifying the vulnerability index to minimize risk**. 
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+Because of its geographic location in both the Southeast Asian monsoon and typhoon belts, the ""Philippines"" is prone to flooding in various areas. One city that experience frequent flooding is the city of Urdaneta in Pangasinan. **The purpose of conducting a Scenario Analysis is to assess the threat of damage, liability, loss, or other negative occurrence caused by internal or external vulnerabilities in Urdaneta**.
 
-Most of these elements are styled by browsers with few modifications on our part.
+## Genetic Algorithms
 
-## Heading
+<img src="https://miro.medium.com/max/3200/1*BYDJpa6M2rzWNSurvspf8Q.png" alt="drawing" width="300"/>
 
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Copying natural evolution, i.e., inheritance, mutation, selection and crossover, **Genetic Algorithm** has gained wide acceptance in solving real-world engineering optimization problems (Kingston, 2011). GA is used because of this case’s high dimensionality. Adapting the concept of  dog and/or cattle breeding, the method takes champion males and females to breed, in the hope of producing desirable *traits* in the offspring. Here, a *champion* city has the desirable trait of a low vulnerability to flooding. We will define *chromosomes* for our *champion* cities, and the GA will then take care of *breeding* the cities, looking for the one with lowest vulnerability and cost. 
 
-### Code
+## Methodology
 
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
+<img src="https://drive.google.com/uc?id=1un_OClbmlWFBoSeLojjKkwXpBSwP8l0n" alt="drawing" width="300"/>
 
-{% highlight js %}
-// Example can be run directly in your JavaScript console
+The physical property of each barangay in Urdaneta, Pangasinan was defined. The barangays lying on the flood plain nearest the river will have a factor of two (to double the vulnerability), and are marked with red numbers.  Less prone to flooding will have a value of 1 (will not affect vulnerability), shown in pink numbers, and even less prone will have a factor of ½, shown in white. These numbers will be used to multiply the area’s vulnerability.
 
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
+Eleven chromosomes were identified. Each chromosome will be given a value from 0 to 3 per barangay based on the data from the government of Urdaneta, Pangasinan. (See full paper for the description of each chromosome). The 11 chromosomes are:  
+1) Urbanized Area Ratio  
+2) Literacy Rate  
+3) Mortality Rate  
+4) Population Under Poverty  
+5) TV / Radio Penetration Rate  
+6) State of Non-structural Measures 
+7) State of Structural Measures 
+8) Percentage of Population  
+9) Percentage of Area / Extent 
+10) Economic Value 
+11) Cost of Relocation 
 
-// Call the function
-adder(2, 6);
-// > 8
-{% endhighlight %}
+**Vulnerability** is assumed to be a weighted sum of the components:  
+V<sub>i</sub> = S<sub>i</sub>* (W<sub>Urbanized</sub>\*X<sub>Urbanized</sub> + 
+  W<sub>Literacy</sub>\*X<sub>Literacy</sub>\*W<sub>TvRadio</sub>\*X<sub>TvRadio</sub> + 
+  W<sub>Mortality</sub>\*X<sub>Mortality</sub>\* W<sub>Poverty</sub>\*X<sub>Poverty</sub> +
+   W<sub>Nonstructural</sub>\*X<sub>Nonstructural</sub> +
+   W<sub>Structural</sub>\*X<sub>Structural</sub> + 
+   W<sub>Population</sub>\*X<sub>Population</sub> + 
+   W<sub>Extent</sub>\*X<sub>Extent</sub> + 
+   W<sub>EconomicValue</sub>\*X<sub>EconomicValue</sub> + 
+   W<sub>CostOfRelocation</sub>\*X<sub>CostOfRelocation</sub>)
 
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+  A **cost function** or **penalty function** is defined:  
+  C<sub>i</sub> = exp(3 - X<sub>Urbanized</sub>) + (3 – X<sub>Literacy</sub>)  +  (3 - X<sub>Mortality</sub>)2  + exp(3 – X<sub>Poverty</sub>) + (3 – X<sub>TVRadio</sub>) + (3 – X<sub>Nonstructural</sub>) + exp(3 - X<sub>Structural</sub>) + (3 - X<sub>Population</sub>)+ exp(3 - X<sub>EconomicValue</sub>) +  exp (3 - X<sub>CostOfRelocation</sub>))/S<sub>i</sub>
+  
+  Finally, we determine the **weights** to be used in the vulnerability function. The table below comes from the State of Michigan, USA, Vulnerability Assessment Protocol, originally used for prioritizing hazards, which we now use _to prioritize the components of vulnerability_. We took only the first two columns, those under “always very important” and “usually important”.
 
-### Gists via GitHub Pages
+  <img src="https://drive.google.com/uc?id=1_taMUJwuy6D4PTwZ1knsuqhYr0mm-PuT" alt="drawing" width="500"/>  
+  <br><br>
+  
+  The **GA** function in **MATLAB** was used to run the genetic algorithm. 
 
-Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
+  ## Results
 
-{% gist 5555251 gist.md %}
+  The results we got from running GA in the toolbox produced the following ideal arrangements for the 16 barangays, broken-down by chromosomes. Below are the results for two selected chromosomes.
+  
 
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.
+   
 
-### Lists
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
 
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
 
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
-<dl>
-  <dt>HyperText Markup Language (HTML)</dt>
-  <dd>The language used to describe and define the content of a Web page</dd>
 
-  <dt>Cascading Style Sheets (CSS)</dt>
-  <dd>Used to describe the appearance of Web content</dd>
 
-  <dt>JavaScript (JS)</dt>
-  <dd>The programming language used to build advanced Web sites and applications</dd>
-</dl>
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-### Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](http://placehold.it/800x400 "Large example image")
-![placeholder](http://placehold.it/400x200 "Medium example image")
-![placeholder](http://placehold.it/200x200 "Small example image")
-
-### Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
------
-
-Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a>
