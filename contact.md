@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Contact Me
-excerpt: "Recent Workshops"
 ---
 <table style="width:100%">
   <tr>
