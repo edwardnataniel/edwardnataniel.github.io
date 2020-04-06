@@ -5,7 +5,7 @@ title: Contact Me
 <table style="width:100%">
   <tr>
     <td>Mobile</td>
-    <td>+63 921 598 2476</td
+    <td>+63 921 598 2476</td>
   </tr>
   <tr>
     <td>Email</td>
