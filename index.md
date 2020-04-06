@@ -10,5 +10,5 @@ I'm Edward. I'm currently a graduate student at University of the Philippines Di
 My current interests are Data Mining and Analytics, Statistical Machine Learning, Multivariate Analysis, Categorical Data Analysis, and Computational Statistics. I do photography during my spare time. Check out my [instagram](https://www.instagram.com/edward.nataniel/) account.
 
 
-<img src="/images/manilabay.jpg" alt="drawing" width="260"/> <img src="/images/oble.jpg" alt="drawing" width="260"/>  
+<img src="/images/manilabay.jpg" alt="drawing" width="260"/> <img src="/images/oble.png" alt="drawing" width="260"/>  
 <img src="/images/baguio.jpg" alt="drawing" width="260"/> <img src="/images/hongkong.jpg" alt="drawing" width="260"/> 
