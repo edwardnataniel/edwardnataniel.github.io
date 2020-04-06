@@ -21,6 +21,6 @@ title: Contact Me
   </tr>
   <tr>
     <td>Personal Website</td>
-    <td><a href=" edwardnataniel.github.io">edwardnataniel.github.io</a></td>
+    <td><a href="https://edwardnataniel.github.io">edwardnataniel.github.io</a></td>
   </tr>
 </table>
