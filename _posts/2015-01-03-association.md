@@ -132,7 +132,7 @@ Note that the rule {Heineken}⇒{soda} did not make it to the cutoff. Heineken i
 
 Listed in the tables below are the top 5 rules with the highest support and top 5 rules with the highest confidence using the original threshold.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table1.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table1.PNG" width="450" />
 
 The rule {chicken,ice_crea,sardines} => {coke} has a confidence of 1. This means that all transactions with chicken, ice cream, and sardines also have coke in them. 
 
@@ -140,19 +140,19 @@ Generally, we want rules that have high confidence and high correlation. The cor
 
 Listed in the table below are the top 5 rules with the highest lift. All five of them have a support value of 0.1159. Since the lift is >1, we can say that there is a positive correlation between the items on the LHS and RHS.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table2.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table2.PNG" width="450" />
 
 By decreasing the minimum support threshold of 0.05 and the minimum confidence threshold of 0.6, new rules with higher lift are found.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table3.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table3.PNG" width="450" />
 
 The table below by Mehmood et al. can be used to assess the  Kulczynski and Imbalance Ratio (IR) values of the generated rules.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table4.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table4.PNG" width="450" />
 
 From the dataset, the Kulczynski values that were obtained ranges only from 0.5033 to 0.6959. So the rules were sorted by decreasing Kulczynski values and the IR of each rule were checked.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table5.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table5.PNG" width="450" />
 
 In the table above, the first three rules can be considered as interesting rules since they all have IR values that are relatively closer to 1. These rules are desired because they have a positive correlation and are imbalanced. Meanwhile, the fourth rule and fifth rules can be considered as neutral.
 
@@ -160,11 +160,11 @@ In the table above, the first three rules can be considered as interesting rules
 
 A minimum support threshold of 10 is used to generate the frequent itemset. The FP-growth program runs noticeably faster than the one using apriori. A total of 1000 items were generated. Here are the top 10 itemsets with largest support.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table6.PNG" width="250" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table6.PNG" width="300" />
 
 The algorithm was able to find some rules that have both high support count and high confidence. Here are the 6 rules with highest support count of 116 and confidence of 100%.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table7.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table7.PNG" width="450" />
 
 The business owners may use these rules to their advantage. Supermarkets may consider these rules in their shelf management such that items are commonly bought together are close to each other. They may also offer discounts to entice the customers to buy more items.
 
