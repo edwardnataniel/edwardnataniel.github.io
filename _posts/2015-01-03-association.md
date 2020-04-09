@@ -6,3 +6,5 @@ tags: [intro, beginner, jekyll, tutorial]
 comments: true
 category: blog
 ---
+#### PDF version of the report here:
+<a href="https://edwardnataniel.github.io/files/CS176PA1_Apostol_Edward_Nataniel_C.pdf"> https://edwardnataniel.github.io/files/CS176PA1_Apostol_Edward_Nataniel_C.pdf</a>
