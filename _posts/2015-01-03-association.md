@@ -50,7 +50,7 @@ The **support** of the association rule A ⇒ B, or sup(A ⇒ B),  is the propor
 
 The **confidence** of the association rule A ⇒ B is the proportion transactions in which B is present whenever A is present.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/conf.PNG" width="350" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/conf.PNG" width="400" />
 
 A rule is considered to be **strong** if it satisfies the **minimum support threshold** and the **minimum confidence threshold**. For this assignment, the minimum support threshold was set at 0.1 while the minimum confidence threshold was set at 0.8. 
 
@@ -60,23 +60,23 @@ Three correlation measures of interest were computed in this programming assignm
 
 The **lift** between the occurrence of A and B is defined as
  
-<img src="https://edwardnataniel.github.io/images/projects/assoc/lift.PNG" width="350" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/lift.PNG" width="400" />
 
 Note that when P(A U B) = P(A)P(B), then it implies that the events A and B are independent. Hence, having a lift value of 1 means that A and B are uncorrelated. Having a lift > 1 means that A and B are positively correlated or the occurrence of one increases the chance of occurrence of the other. When lift < 1, then A and B are negatively correlated or the occurrence of one decreases the chance of occurrence of the other. The lift of the association rule A ⇒ B is equivalent to:
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/lift2.PNG" width="350" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/lift2.PNG" width="400" />
 
 The **Imbalance Ratio(IR)** assesses the imbalance of 2 itemsets A and B and is given by the formula below.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/IR.PNG" width="350" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/IR.PNG" width="400" />
 
 The range of IR is from 0 to 1. IR = 0 means that the directional implications between A and B (A ⇒ B and B ⇒ A) are the same. What we are interested in are the rules that are highly skewed or has an IR close to 1.
 
 The **Kulczynski measure** is the arithmetic mean of the confidence measures of A and B.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/kulc1.PNG" width="350" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/kulc1.PNG" width="400" />
 <br>
-<img src="https://edwardnataniel.github.io/images/projects/assoc/kulc2.PNG" width="350" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/kulc2.PNG" width="400" />
 
 The Kulczynski measure ranges from 0 to 1. The farther the value of Kulczynski measure from 0.5, the closer the relationship between two itemsets.
 
