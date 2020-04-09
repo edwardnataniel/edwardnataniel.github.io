@@ -9,16 +9,16 @@ category: blog
 #### PDF version of the report here:
 <a href="https://edwardnataniel.github.io/files/CS176PA1_Apostol_Edward_Nataniel_C.pdf"> https://edwardnataniel.github.io/files/CS176PA1_Apostol_Edward_Nataniel_C.pdf</a>
 
-## Introduction
+## 1 Introduction
 Association Rule Mining is a method that can be used to detect frequently occurring patterns among the items in a transaction database. It has a lot of applications in different fields. It can be used in document content analysis to detect what words frequently occur together in a text document. In marketing and sales, association rule mining is useful in supermarket shelf management. It can be used to determine what products are frequently purchased together by customers. 
 
 
 In this programming assignment, two of the most popular association rule mining algorithms, namely, the Apriori and FP-growth algorithms, will be used to analyze a sample retail market basket dataset. The generated results will be evaluated according to correlation measures such as Lift, Kulczynski, and Imbalance Ratio (IR).
 
-## Objectives
+## 2 Objectives
 The objective of this programming assignment is to be able to **demonstrate how association rule mining can be applied to a sample retail market basket dataset using two algorithms – Apriori and FP-growth**. This programming assignment also aims to **demonstrate the evaluation of generated association rules using Lift, Kulczynski, and Imbalance Ratio (IR)**. 
 
-## Methodology
+## 3 Methodology
 
 ### 3.1	The Dataset
 The dataset named *basket.dat* contains 1001 records of sample retail transactions from a grocery store. Each line represent a single transaction. Each item purchased is separated by a space character. 
