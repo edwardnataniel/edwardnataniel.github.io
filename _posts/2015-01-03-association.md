@@ -50,7 +50,7 @@ The **support** of the association rule A ⇒ B, or sup(A ⇒ B),  is the propor
 
 The **confidence** of the association rule A ⇒ B is the proportion transactions in which B is present whenever A is present.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/conf.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/conf.PNG" width="450" />
 
 A rule is considered to be **strong** if it satisfies the **minimum support threshold** and the **minimum confidence threshold**. For this assignment, the minimum support threshold was set at 0.1 while the minimum confidence threshold was set at 0.8. 
 
@@ -60,23 +60,23 @@ Three correlation measures of interest were computed in this programming assignm
 
 The **lift** between the occurrence of A and B is defined as
  
-<img src="https://edwardnataniel.github.io/images/projects/assoc/lift.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/lift.PNG" width="450" />
 
 Note that when P(A U B) = P(A)P(B), then it implies that the events A and B are independent. Hence, having a lift value of 1 means that A and B are uncorrelated. Having a lift > 1 means that A and B are positively correlated or the occurrence of one increases the chance of occurrence of the other. When lift < 1, then A and B are negatively correlated or the occurrence of one decreases the chance of occurrence of the other. The lift of the association rule A ⇒ B is equivalent to:
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/lift2.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/lift2.PNG" width="450" />
 
 The **Imbalance Ratio(IR)** assesses the imbalance of 2 itemsets A and B and is given by the formula below.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/IR.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/IR.PNG" width="450" />
 
 The range of IR is from 0 to 1. IR = 0 means that the directional implications between A and B (A ⇒ B and B ⇒ A) are the same. What we are interested in are the rules that are highly skewed or has an IR close to 1.
 
 The **Kulczynski measure** is the arithmetic mean of the confidence measures of A and B.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/kulc1.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/kulc1.PNG" width="450" />
 <br>
-<img src="https://edwardnataniel.github.io/images/projects/assoc/kulc2.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/kulc2.PNG" width="450" />
 
 The Kulczynski measure ranges from 0 to 1. The farther the value of Kulczynski measure from 0.5, the closer the relationship between two itemsets.
 
@@ -120,11 +120,11 @@ The program was run twice. The first run was done to generate the frequent items
 
 A total of 172 rules that satisfy the minimum support threshold of 0.1 and the minimum confidence threshold of 0.8 were generated. The scatterplot of the rules was generated using the arulesViz package in R.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/plot1.PNG" width="500" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/plot1.PNG" width="520" />
 
 By decreasing the minimum support threshold of 0.05 and the minimum confidence threshold of 0.6, more rules were generated. The scatterplot of the rules when the thresholds are relaxed is shown below.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/plot2.PNG" width="500" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/plot2.PNG" width="520" />
 
 By inspecting the first scatterplot, it can be seen that there are very few observations that has a support value > 0.25. The rule on the rightmost side is the rule {soda}⇒{Heineken} [support=0.2567, conf=0.8082]. This means that 25.67% of all the transactions contain both soda and Heineken. For those transactions with soda, 80.82% of them also bought Heineken.
 
@@ -132,7 +132,7 @@ Note that the rule {Heineken}⇒{soda} did not make it to the cutoff. Heineken i
 
 Listed in the tables below are the top 5 rules with the highest support and top 5 rules with the highest confidence using the original threshold.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table1.PNG" width="450" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table1.PNG" width="500" />
 
 The rule {chicken,ice_crea,sardines} => {coke} has a confidence of 1. This means that all transactions with chicken, ice cream, and sardines also have coke in them. 
 
@@ -140,19 +140,19 @@ Generally, we want rules that have high confidence and high correlation. The cor
 
 Listed in the table below are the top 5 rules with the highest lift. All five of them have a support value of 0.1159. Since the lift is >1, we can say that there is a positive correlation between the items on the LHS and RHS.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table2.PNG" width="450" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table2.PNG" width="500" />
 
 By decreasing the minimum support threshold of 0.05 and the minimum confidence threshold of 0.6, new rules with higher lift are found.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table3.PNG" width="450" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table3.PNG" width="500" />
 
 The table below by Mehmood et al. can be used to assess the  Kulczynski and Imbalance Ratio (IR) values of the generated rules.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table4.PNG" width="450" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table4.PNG" width="500" />
 
 From the dataset, the Kulczynski values that were obtained ranges only from 0.5033 to 0.6959. So the rules were sorted by decreasing Kulczynski values and the IR of each rule were checked.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table5.PNG" width="450" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table5.PNG" width="500" />
 
 In the table above, the first three rules can be considered as interesting rules since they all have IR values that are relatively closer to 1. These rules are desired because they have a positive correlation and are imbalanced. Meanwhile, the fourth rule and fifth rules can be considered as neutral.
 
@@ -160,11 +160,11 @@ In the table above, the first three rules can be considered as interesting rules
 
 A minimum support threshold of 10 is used to generate the frequent itemset. The FP-growth program runs noticeably faster than the one using apriori. A total of 1000 items were generated. Here are the top 10 itemsets with largest support.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table6.PNG" width="300" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table6.PNG" width="350" />
 
 The algorithm was able to find some rules that have both high support count and high confidence. Here are the 6 rules with highest support count of 116 and confidence of 100%.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table7.PNG" width="450" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table7.PNG" width="500" />
 
 The business owners may use these rules to their advantage. Supermarkets may consider these rules in their shelf management such that items are commonly bought together are close to each other. They may also offer discounts to entice the customers to buy more items.
 
