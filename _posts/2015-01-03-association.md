@@ -160,7 +160,7 @@ In the table above, the first three rules can be considered as interesting rules
 
 A minimum support threshold of 10 is used to generate the frequent itemset. The FP-growth program runs noticeably faster than the one using apriori. A total of 1000 items were generated. Here are the top 10 itemsets with largest support.
 
-<img src="https://edwardnataniel.github.io/images/projects/assoc/table6.PNG" width="400" />
+<img src="https://edwardnataniel.github.io/images/projects/assoc/table6.PNG" width="250" />
 
 The algorithm was able to find some rules that have both high support count and high confidence. Here are the 6 rules with highest support count of 116 and confidence of 100%.
 
