@@ -192,3 +192,8 @@ Mehmood, R., Katib, S. S. I., & Chlamtac, I. (2020). Smart Infrastructure and Ap
 
 Naval, P. (2015). Association Rules (Lecture 4). CS 176 Course Materials. UP Department of Computer Science.
 
+
+#### Github repository:
+<a href="https://github.com/edwardnataniel/cs176-data-mining/tree/master/Association%20Rules%20Mining%20Using%20the%20Retail%20Market%20Basket%20Data%20Set">
+https://github.com/edwardnataniel/cs176-data-mining/tree/master/Association%20Rules%20Mining%20Using%20the%20Retail%20Market%20Basket%20Data%20Setn </a>
+
