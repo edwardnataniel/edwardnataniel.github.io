@@ -156,7 +156,7 @@ From the dataset, the Kulczynski values that were obtained ranges only from 0.50
 
 In the table above, the first three rules can be considered as interesting rules since they all have IR values that are relatively closer to 1. These rules are desired because they have a positive correlation and are imbalanced. Meanwhile, the fourth rule and fifth rules can be considered as neutral.
 
-### 4.1 FP-growth
+### 4.2 FP-growth
 
 A minimum support threshold of 10 is used to generate the frequent itemset. The FP-growth program runs noticeably faster than the one using apriori. A total of 1000 items were generated. Here are the top 10 itemsets with largest support.
 
