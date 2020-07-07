@@ -1,0 +1,14 @@
+---
+title: Artificial Neural Networks vs Support Vector Machines for Image Classification
+excerpt: "Shows the implementation of image classification using the two most important discriminative models: ANN and SVM."
+modified: 04/6/2020, 15:00:00
+tags: [intro, beginner, jekyll, tutorial]
+comments: true
+category: blog
+---
+
+## Overview
+This project shows the implementation of image classification using the two most important discriminative models: ANN and SVM. Training and testing data are made possible by using **ANN** and **LibSVM** libraries, respectively. This paper also shows the accuracy of these two discriminative models.
+
+## Written Report
+<a href="https://github.com/edwardnataniel/ann-svm-image-classification/blob/master/me34.pdf" >https://github.com/edwardnataniel/ann-svm-image-classification/blob/master/me34.pdf</a>
