@@ -16,6 +16,7 @@ body {
 	@include container;
 	padding: 2em 0 1em;
 	background-color: #05264c;
+	color: #fcfaf5;
 	font-family: $heading-font;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -229,7 +230,7 @@ $button-size: 1.5rem;
 	@include clearfix;
 	clear: both;
 	padding-top: 2em;
-	border-top-width: 2em;
+	border-top-width: 1em;
 	border-top-style: solid;
 	border-top-color: #ff7f50;
 	h1 {
