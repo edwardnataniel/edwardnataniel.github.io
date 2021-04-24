@@ -236,6 +236,9 @@ $button-size: 1.5rem;
 	h1 {
 		margin-top: 0;
 	}
+	h2 {
+		color: #05264c;
+	}
 	.post,
 	.page {
 		@include container;
@@ -278,6 +281,7 @@ $button-size: 1.5rem;
 	article {
 		h2 {
 			margin-bottom: 4px;
+			color: #05264c;
 			@include font-rem(20);
 			&.link-post {
 				margin-bottom: 0px + $doc-line-height;
