@@ -68,7 +68,6 @@ body {
 		padding: 0;
 		clear: both;
 		list-style-type: none;
-		padding-left: 50px;
 	}
 	li {
 		display: block;
@@ -231,7 +230,7 @@ $button-size: 1.5rem;
 	@include clearfix;
 	clear: both;
 	padding-top: 2em;
-	border-top-width: 1em;
+	border-top-width: 0.5em;
 	border-top-style: solid;
 	border-top-color: #ff7f50;
 	h1 {
