@@ -16,7 +16,7 @@ body {
 	@include container;
 	position: fixed;
 	padding: 2em 0 1em;
-	background-color: mediumaquamarine;
+	background-color: lightcoral;
 	color: #5bc3b6;
 	font-family: $heading-font;
 	text-transform: uppercase;
@@ -98,7 +98,7 @@ body {
 			}
 		}
 		a:hover {
-			color: #3f8980;
+			color: indianred;
 		}
 	}
 }
@@ -239,7 +239,7 @@ $button-size: 1.5rem;
 		margin-top: 0;
 	}
 	h2, h3, h4 {
-		color: #5bc3b6;
+		color: lightcoral;
 	}
 	.post,
 	.page {
