@@ -1,6 +1,10 @@
 ---
 title: Association Rules Mining Using the Retail Market Basket Data Set
 excerpt: "A programming assignment submitted as a part of the requirements for CS 176: Data Mining."
+text1: "[Overview]"
+text2: "[Github Repository]"
+link1: "https://edwardnataniel.github.io/blog/association/"
+link2: "https://github.com/edwardnataniel/market-basket-association-rules-mining"
 modified: 04/6/2020, 15:00:00
 tags: [intro, beginner, jekyll, tutorial]
 comments: true
