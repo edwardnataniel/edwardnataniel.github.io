@@ -238,6 +238,12 @@ $button-size: 1.5rem;
 	h1 {
 		margin-top: 0;
 	}
+	h2 {
+		margin-top: 1.5rem;
+	}
+	h3 {
+		margin-top: 1.25rem;
+	}
 	h2, h3, h4 {
 		color: lightcoral;
 	}
@@ -263,6 +269,9 @@ $button-size: 1.5rem;
 	pre {
 		font-size: 1rem !important;
 		background-color: #f2f0f0 !important;
+	}
+	p {
+		font-size: 1rem;
 	}
 }
 
