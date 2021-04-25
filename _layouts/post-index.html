@@ -29,7 +29,7 @@
         {% capture written_year %}{{ year }}{% endcapture %}
       {% endif %}-->
       <article>
-         <h2>{{ post.title }}</h2><u><a class="post-link" href="{{ post.link1 }}"> {{ post.text1 | strip_html | truncate: 160 }}</a></u> <u><a class="post-link" href="{{ post.link2 }}"> {{ post.text2 | strip_html | truncate: 160 }}</a></u>
+         <h2>{{ post.title }}</h2><u><a class="post-link" href="{{ post.link1 }}"> {{ post.text1 | strip_html | truncate: 160 }}</a></u> <u><a class="post-link" href="{{ post.link2 }}"> {{ post.text2 | strip_html | truncate: 160 }}</a></u> <u><a class="post-link" href="{{ post.link3 }}"> {{ post.text3 | strip_html | truncate: 160 }}</a></u>
          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
       </article>
     {% endfor %}
