@@ -30,9 +30,9 @@
       {% endif %}-->
       <article>
         {% if post.link %}
-         <h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2><u><a class="post-link" href="{{ post.link1 }}"> {{ post.text1 | strip_html | truncate: 160 }}</a></u><u><a class="post-link" href="{{ post.link2 }}"> {{ post.text2 | strip_html | truncate: 160 }}</u>
+         <h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2><u><a class="post-link" href="{{ post.link1 }}"> {{ post.text1 | strip_html | truncate: 160 }}</a></u><u><a class="post-link" href="{{ post.link2 }}"> {{ post.text2 | strip_html | truncate: 160 }}</a></u>
         {% else %}
-         <h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2><u><a  class="post-link" href="{{ post.link1 }}"> {{ post.text1 | strip_html | truncate: 160 }}</a></u> <u><a class="post-link" href="{{ post.link2 }}"> {{ post.text2 | strip_html | truncate: 160 }}</u>
+         <h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2><u><a  class="post-link" href="{{ post.link1 }}"> {{ post.text1 | strip_html | truncate: 160 }}</a></u> <u><a class="post-link" href="{{ post.link2 }}"> {{ post.text2 | strip_html | truncate: 160 }}</a></u>
           <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
         {% endif %}
       </article>
