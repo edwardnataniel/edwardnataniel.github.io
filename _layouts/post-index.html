@@ -30,9 +30,9 @@
       {% endif %}-->
       <article>
         {% if post.link %}
-         <u><span class="title-post"><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></p></u>
+         <u><span class="title-post"><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></u>
         {% else %}
-         <u><span class="title-post"><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p></u>
+         <u><span class="title-post"><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></u>
           <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
         {% endif %}
       </article>
