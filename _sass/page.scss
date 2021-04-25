@@ -16,13 +16,13 @@ body {
 	@include container;
 	position: fixed;
 	padding: 2em 0 1em;
-	background-color: #ce2242;
+	background-color: lightcoral;
 	color: #fcfaf5;
 	font-family: $heading-font;
 	text-transform: uppercase;
 	@include clearfix;
 	border-bottom-style: solid;
-	border-bottom-color: salmon;
+	border-bottom-color: gainsboro;
 	border-bottom-width: .5em;
 }
 
@@ -87,9 +87,9 @@ body {
 		}
 		a {
 			display: block;
-			padding: 10px 10px;
-			color: #f7f3eb;
-			font-size: large;
+			padding: 10px 15px;
+			color: floralwhite;
+			font-size: larger;
 			decoration: none;
 			border-bottom: 0 solid transparent;
 			@include transition(all .2s);
@@ -98,7 +98,8 @@ body {
 			}
 		}
 		a:hover {
-			color: #ff7f50;
+			color: #aa0707;
+			font-size: x-large;
 		}
 	}
 }
