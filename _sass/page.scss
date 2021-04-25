@@ -14,6 +14,7 @@ body {
 
 .navigation-wrapper {
 	@include container;
+	position: fixed;
 	padding: 2em 0 1em;
 	background-color: #05264c;
 	color: #fcfaf5;
