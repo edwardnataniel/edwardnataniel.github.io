@@ -95,7 +95,6 @@ body {
 			@include transition(all .2s);
 			@media #{$small} {
 				display: inline;
-				padding: 0;
 			}
 		}
 		a:hover {
