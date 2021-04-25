@@ -1,0 +1,14 @@
+---
+title: Philippines Airbnb Pricing Recommendation
+excerpt: "Predicting the price of Airbnb listings in the Philippines using Machine Learning. Capstone project for the Data Science Fellowship of Eskwelabs."
+text1: "[Project Website]"
+text2: "[Github Repository]"
+text3: "[Presentation Video]"
+link1: "http://airbnbphpricing.herokuapp.com/"
+link2: "https://github.com/edwardnataniel/airbnb-prediction-ph"
+link3: "https://www.facebook.com/Eskwelabs/videos/290968519066872"
+modified: 04/6/2020, 15:00:00
+tags: [intro, beginner, jekyll, tutorial]
+comments: true
+category: blog
+---
