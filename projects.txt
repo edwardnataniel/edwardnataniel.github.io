@@ -31,3 +31,17 @@ Title: Analysis of Vulnerability Index Across Countries Using Multiple Linear Re
 Project Number: 7
 Filename: 2019-01-03-project7.md
 Title: A Cross-country Analysis of Vulnerability to Natural Hazards Using Principal Component Regression
+
+Project Number: 8
+Filename: 2019-02-15-spotify.md
+Title: Building a Spotify Recommendation Engine Based on the Songs of Lola Amour Band
+
+Project Number: 9
+Filename: 2019-03-01-ccfraud.md
+Title: Credit Card Fraud Detection Using Machine Learning
+
+Project Number: 10
+Filename: 2019-03-15-airbnbph.md
+Title: Philippines Airbnb Pricing Recommendation
+
+
