@@ -238,12 +238,6 @@ $button-size: 1.5rem;
 	h1 {
 		margin-top: 0;
 	}
-	h2 {
-		margin-top: 1.5rem;
-	}
-	h3 {
-		margin-top: 1.25rem;
-	}
 	h2, h3, h4 {
 		color: lightcoral;
 	}
@@ -298,6 +292,7 @@ $button-size: 1.5rem;
 	}
 	article {
 		h2 {
+			font-size: 1.5rem;
 			margin-bottom: 4px;
 			color: #05264c;
 			@include font-rem(20);
@@ -306,8 +301,11 @@ $button-size: 1.5rem;
 				margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
 			}
 		}
+		h3 {
+			font-size: 1.25rem;
+		}
 		p {
-			@include font-rem(14);
+			font-size: 1rem;
 		}
 		p+p {
 			text-indent: 0;
