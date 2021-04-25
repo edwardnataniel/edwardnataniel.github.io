@@ -33,8 +33,8 @@
          <u><h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2></u>
         {% else %}
          <u><h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2></u>
-          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-          <p>{{ post.link1 | strip_html | truncate: 160 }}  {{ post.link2 | strip_html | truncate: 160 }}</p>
+          <p>{{ post.excerpt | strip_html | truncate: 160 }}
+            <a href=" {{post.link1 }}">{{ post.link1 | strip_html | truncate: 160 }}</a>  {{ post.link2 | strip_html | truncate: 160 }}</p>
         {% endif %}
       </article>
     {% endfor %}
