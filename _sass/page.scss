@@ -17,7 +17,7 @@ body {
 	position: fixed;
 	padding: 2em 0 1em;
 	background-color: mediumaquamarine;
-	color: #fcfaf5;
+	color: #5bc3b6;
 	font-family: $heading-font;
 	text-transform: uppercase;
 	@include clearfix;
@@ -98,7 +98,7 @@ body {
 			}
 		}
 		a:hover {
-			color: mediumseagreen;
+			color: #3f8980;
 		}
 	}
 }
@@ -239,7 +239,7 @@ $button-size: 1.5rem;
 		margin-top: 0;
 	}
 	h2, h3, h4 {
-		color: mediumaquamarine;
+		color: #5bc3b6;
 	}
 	.post,
 	.page {
