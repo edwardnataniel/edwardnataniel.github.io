@@ -30,12 +30,10 @@
       {% endif %}-->
       <article>
         {% if post.link %}
-         <u><h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2></u>
+         <h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2><a href="{{ post.link1 }}"> {{ post.text1 | strip_html | truncate: 160 }}</a> <a href="{{ post.link2 }}"> {{ post.text2 | strip_html | truncate: 160 }}
         {% else %}
-         <u><h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2></u>
-          <p>{{ post.excerpt | strip_html | truncate: 160 }} <br>
-            <a href="{{ post.link1 }}"> {{ post.text1 | strip_html | truncate: 160 }}</a>
-            <a href="{{ post.link2 }}"> {{ post.text2 | strip_html | truncate: 160 }}</p>
+         <h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2><a href="{{ post.link1 }}"> {{ post.text1 | strip_html | truncate: 160 }}</a> <a href="{{ post.link2 }}"> {{ post.text2 | strip_html | truncate: 160 }}
+          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
         {% endif %}
       </article>
     {% endfor %}
