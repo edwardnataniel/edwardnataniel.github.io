@@ -16,13 +16,13 @@ body {
 	@include container;
 	position: fixed;
 	padding: 2em 0 1em;
-	background-color: #05264c;
+	background-color: #ce2242;
 	color: #fcfaf5;
 	font-family: $heading-font;
 	text-transform: uppercase;
 	@include clearfix;
 	border-bottom-style: solid;
-	border-bottom-color: #ff7f50;
+	border-bottom-color: salmon;
 	border-bottom-width: .5em;
 }
 
