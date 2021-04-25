@@ -1,5 +1,6 @@
 ---
 layout: page
+title: CV
 ---
 
 #### View my CV here:  
