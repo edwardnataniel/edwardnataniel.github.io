@@ -34,6 +34,7 @@
         {% else %}
          <u><h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2></u>
           <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+          <p>{{ post.link1 | strip_html | truncate: 160 }}  {{ post.link2 | strip_html | truncate: 160 }}</p>
         {% endif %}
       </article>
     {% endfor %}
